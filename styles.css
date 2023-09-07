@@ -31,11 +31,12 @@ a:hover {
 }
 
 img {
-  max-width: 500px;
+  width: 500px;
 }
 
 .home {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -46,4 +47,23 @@ img {
   align-items: center;
   font-weight: 500;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    margin: 3%;
+  }
+  .home {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  img {
+    max-width: 350px;
+  }
+
+  .current {
+    margin-top: 20px;
+  }
 }

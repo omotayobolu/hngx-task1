@@ -19,5 +19,5 @@ day.innerText = weekDays[todayDay];
 const UTCTime = `${today.getUTCHours()}:${today
   .getUTCMinutes()
   .toString()
-  .padStart(2, "0")}:${today.getUTCSeconds()} `;
+  .padStart(2, "0")}:${today.getUTCSeconds().toString().padStart(2, "0")} `;
 time.innerHTML = UTCTime;
