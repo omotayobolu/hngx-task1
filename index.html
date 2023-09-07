@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Stage One Task</title>
+  </head>
+  <body>
+    <div class="home">
+      <div>
+        <h2 data-testid="slackUserName">Omotayo.Bolu</h2>
+        <p class="track" data-testid="myTrack">Frontend</p>
+        <a
+          href="https://github.com/omotayobolu/hngx-task1"
+          data-testid="githubURL"
+          >Github Link</a
+        >
+      </div>
+      <img
+        src="./profile-pic.jpg"
+        alt="Omotayo.Bolu"
+        data-testid="slackDisplayImage"
+      />
+    </div>
+    <div class="current">
+      <p>Current day of the week:</p>
+      <p id="currentDay" data-testid="currentDayOfTheWeek"></p>
+    </div>
+    <div class="current">
+      <p>Current UTC Time:</p>
+      <p id="currentUTCTime" data-testid="currentUTCTime"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
