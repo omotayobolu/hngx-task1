@@ -30,9 +30,8 @@ a:hover {
   color: red;
 }
 
-img {
-  width: 100%;
-  margin: 0 auto;
+.image-container {
+  width: 50%;
 }
 
 .home {
@@ -59,7 +58,7 @@ img {
 
 .current span {
   margin-left: 2px;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .links {
@@ -81,6 +80,10 @@ img {
 
   p {
     font-size: 1rem;
+  }
+
+  .image-container {
+    width: 100%;
   }
 
   .home {
