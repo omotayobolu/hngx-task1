@@ -15,29 +15,52 @@
   <body>
     <div class="home">
       <div>
-        <h2 data-testid="slackUserName">Omotayo.Bolu</h2>
-        <p class="track" data-testid="myTrack">Frontend</p>
-        <a
-          href="https://github.com/omotayobolu/hngx-task1"
-          data-testid="githubURL"
-          >Github Link</a
-        >
+        <h2 data-testid="slackDisplayName">Omotayo.Bolu</h2>
+        <p class="description">
+          My primary objective is to get better at javascript and do more of
+          typescript, to improve the quality of my codes and become a better
+          developer generally. I also plan to form a team with a few friends in
+          other careers in tech, to build team projects, get clients, contribute
+          to open-source projects, and so on, to help grow as a developer. I
+          also plan to stay updated with the latest updates in the industry
+          through reading newsletters (especially), blogs, and conferences to
+          connect with more people in the field. Lastly, I need to work on my
+          soft skills to prepare myself for greater responsibilities and be a
+          better person.
+        </p>
+
+        <div class="current">
+          <p>Current UTC Time:</p>
+          <span id="currentUTCTime" data-testid="currentTimeUTC"></span>
+        </div>
+        <div class="current">
+          <p>Current day of the week:</p>
+          <span id="currentDay" data-testid="currentDay"></span>
+        </div>
+        <div class="current">
+          <p>Slack Email:</p>
+          <span id="currentDay" data-testid="slackEmail">
+            omotayodaniel10@gmail.com
+          </span>
+        </div>
+        <div class="links">
+          <a href="https://hng.tech/learn" data-testid="hngLink">HNG Link</a>
+          <a href="https://keyword.dog" data-testid="keywordLink"
+            >Keyword Link</a
+          >
+          <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+            >Scrapeanyweb Link</a
+          >
+        </div>
       </div>
       <div>
         <img
           src="./profile-pic.jpg"
           alt="Omotayo.Bolu"
-          data-testid="slackDisplayImage"
+          data-testid="slackProfilePicture"
+          class="profile-pic"
         />
       </div>
-    </div>
-    <div class="current">
-      <p>Current day of the week:</p>
-      <p id="currentDay" data-testid="currentDayOfTheWeek"></p>
-    </div>
-    <div class="current">
-      <p>Current UTC Time:</p>
-      <p id="currentUTCTime" data-testid="currentUTCTime"></p>
     </div>
   </body>
   <script src="script.js"></script>

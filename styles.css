@@ -7,8 +7,9 @@
 html,
 body {
   background-color: #ffffff;
+  color: black;
   font-family: "Inter", sans-serif;
-  margin: 5%;
+  margin: 5% 5% 2%;
   font-size: 16px;
 }
 
@@ -17,12 +18,11 @@ h2 {
 }
 
 p {
-  font-size: 1.5rem;
-  margin: 10px 0;
+  font-size: 1.2rem;
 }
 
 a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
 }
 
@@ -32,6 +32,7 @@ a:hover {
 
 img {
   width: 500px;
+  border-radius: 50%;
 }
 
 .home {
@@ -39,21 +40,49 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+}
+
+.home > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .current {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: end;
   font-weight: 500;
+}
+
+.current span {
+  margin-left: 2px;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-@media (max-width: 768px) {
+.links a {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
   html,
   body {
     margin: 3%;
   }
+
+  p {
+    font-size: 1rem;
+  }
+
   .home {
     flex-direction: column-reverse;
     gap: 20px;
@@ -61,9 +90,5 @@ img {
 
   img {
     max-width: 350px;
-  }
-
-  .current {
-    margin-top: 20px;
   }
 }
